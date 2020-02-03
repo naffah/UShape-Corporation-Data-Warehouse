@@ -1,0 +1,206 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f02148d0-b7d5-4b1c-adac-06b31b166147" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Car Services Mart - Monthly</ID>
+  <Name>Car Services Mart - Monthly</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="7291ea4e-d7b9-438f-96b5-516589d41a74">
+      <ID>Service Fact Table Monthly</ID>
+      <Name>Service Fact Table Monthly</Name>
+      <DimensionID>Service Fact Table Monthly</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0ede816d-bb26-415a-a8aa-6ece5c36c17d">
+          <AttributeID>s Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b221192c-7359-473c-947e-adb989d17725">
+          <AttributeID>Contact Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2e782778-e8ba-4aa7-b0c4-c9c8cc31103f">
+          <AttributeID>Booking Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9e5b5d8e-9378-433e-8994-ad5bbf415c4e">
+          <AttributeID>Month Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0044b9c5-055e-4bef-a499-92a6a290fa27">
+      <ID>Contacts</ID>
+      <Name>Contacts</Name>
+      <DimensionID>Contacts</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ac44af7d-4fbe-441f-925f-09056a34455c">
+          <AttributeID>Contact Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="78c79f83-0aeb-42f3-8f12-c18c6d30f367">
+      <ID>Service Bookings</ID>
+      <Name>Service Bookings</Name>
+      <DimensionID>Service Bookings</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="378cd122-a95b-46a3-adb3-095f47712262">
+          <AttributeID>Booking Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ed5074d0-8216-4c8f-aeca-21bf5132f64e">
+      <ID>Month</ID>
+      <Name>Month</Name>
+      <DimensionID>Month</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d4f51931-d275-4ac9-b051-205d08d97d8c">
+          <AttributeID>Month Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="539b66e3-7532-4fe1-ae09-b639986adeab">
+          <AttributeID>Year Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="d0613c29-7d61-47fa-8b58-705434fa102f">
+      <ID>Service Fact Table Monthly</ID>
+      <Name>Service Fact Table Monthly</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="170e7467-118a-46b9-b504-2e537116a8b4">
+          <ID>Service Fact Table Monthly Count</ID>
+          <Name>Service Fact Table Monthly Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c04cd28f-da6c-4bb6-ba0d-10f311e375c9">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="2ad509bf-b07d-4f7a-a32a-3adf3b9915d9">
+              <TableID>dbo_Service_Fact_Table_Monthly</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="0c8b95a2-4f16-4d6d-b124-952dff12cee4">
+          <CubeDimensionID>Service Fact Table Monthly</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c5d42fcb-9d37-4af0-b28e-724d34c26d3e">
+              <AttributeID>s Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="70fd5f1c-84de-4cc5-a423-d58051a48b1d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="09e6f06a-e251-4ac5-9986-85584713fa89">
+                    <TableID>dbo_Service_Fact_Table_Monthly</TableID>
+                    <ColumnID>s_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0caed812-5bbd-4f57-b4d8-f037680ac6b8">
+          <CubeDimensionID>Contacts</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f57498d6-82a0-4862-9fb6-f8165d734ad8">
+              <AttributeID>Contact Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1d567c30-367b-427c-aed9-2c6b10efec3d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="83ceed8b-2b57-4ddc-9938-7f06b87add95">
+                    <TableID>dbo_Service_Fact_Table_Monthly</TableID>
+                    <ColumnID>contact_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="556f3199-0a4b-4506-b412-277c2461521e">
+          <CubeDimensionID>Service Bookings</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3f5953f9-4ea9-4ef1-bf96-42be2b834bf7">
+              <AttributeID>Booking Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ddede1ba-ddf8-4891-aa8a-e93e51ca6a4c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4d6c37f7-0488-48b4-bf0d-84641da49311">
+                    <TableID>dbo_Service_Fact_Table_Monthly</TableID>
+                    <ColumnID>booking_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ba334c93-3f0b-4614-a3c9-102db6341993">
+          <CubeDimensionID>Month</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1e05ae20-2170-4a6b-90fd-3dab0a285150">
+              <AttributeID>Month Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="be691fdb-bf55-477c-9acc-8aa14926ae48">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9ceeb0ca-2a32-418b-b23d-c8275c656e13">
+                    <TableID>dbo_Service_Fact_Table_Monthly</TableID>
+                    <ColumnID>month_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="5cbbb20b-1f36-48b9-ba7a-c3bc919a220f">
+    <DataSourceViewID>Car Services Mart - Monthly</DataSourceViewID>
+  </Source>
+</Cube>

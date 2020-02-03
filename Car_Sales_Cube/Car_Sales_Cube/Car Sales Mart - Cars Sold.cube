@@ -1,0 +1,366 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="54dcb036-cd2f-4ba5-b208-1f4e95ce5b34" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Car Sales Mart - Cars Sold</ID>
+  <Name>Car Sales Mart - Cars Sold</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="ac327ae0-22f6-41b0-874c-2cce4c05524b">
+      <ID>Car Sold Fact Table</ID>
+      <Name>Car Sold Fact Table</Name>
+      <DimensionID>Car Sold Fact Table</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="616a3d70-3608-48f6-bd23-337e81c8e11e">
+          <AttributeID>s Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="de5cf1db-d86d-4d11-b525-29b759c1b361">
+          <AttributeID>Car Feature Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="980262ab-8d6e-4b40-99bd-892f2929552c">
+          <AttributeID>Location Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="50e1af56-477e-4e7f-8e2e-3da9040ea932">
+          <AttributeID>Model Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a10959fa-61df-404b-a4a4-084cd423c776">
+          <AttributeID>Day Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a14e58a2-a4ee-4df3-9ff2-00e8dbfccd4f">
+          <AttributeID>Vehicle Category Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f9f9ccf3-7855-438b-a4de-c0aa79eab446">
+          <AttributeID>Manufacturer Short Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="53595268-d33e-47f8-88f1-14fac1af2464">
+          <AttributeID>Customer Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9b1e5a45-2816-45dc-bc4b-120299618ebc">
+      <ID>Car Features Dimension 1</ID>
+      <Name>Car Features Dimension 1</Name>
+      <DimensionID>Car Features Dimension 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c057c892-61a5-4429-8ad1-35a6a563e512">
+          <AttributeID>Car Feature Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a3a108df-c643-4603-a93b-794c377ef0f2">
+      <ID>Location Dimension 1</ID>
+      <Name>Location Dimension 1</Name>
+      <DimensionID>Location Dimension 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b134aec8-5333-4c1d-8fe1-097972f480ad">
+          <AttributeID>Location Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2a64de79-caf7-4b13-b6ad-75b7929a18ea">
+      <ID>Car Model Dimension 1</ID>
+      <Name>Car Model Dimension 1</Name>
+      <DimensionID>Car Model Dimension 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1eef874f-2436-40d9-9836-0c594aca90c3">
+          <AttributeID>Model Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e71d79cd-3c55-426d-bb8a-6bbfb470fc43">
+      <ID>Day Time Dimension 1</ID>
+      <Name>Day Time Dimension 1</Name>
+      <DimensionID>Day Time Dimension 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9a1645cb-3f37-4b9b-99c5-fea11209c1e7">
+          <AttributeID>Day Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4de2c408-9ccf-465e-9648-15305ab13f97">
+          <AttributeID>Week Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="76b01fa8-831c-4877-8779-f209bb9ab14e">
+          <AttributeID>Month Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="56c42082-4aa6-4b8d-8cdf-0931e5aca7dc">
+          <AttributeID>Quarter Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b2e001f-0a37-4214-9c45-dfa548748980">
+          <AttributeID>Year Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a1e3f689-a6ee-469c-b78c-cae58df833bb">
+      <ID>Vehicle Category Dimension 1</ID>
+      <Name>Vehicle Category Dimension 1</Name>
+      <DimensionID>Vehicle Category Dimension 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e6f32431-38b5-40ed-9d4b-9ed7825d688d">
+          <AttributeID>Vehicle Category Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="dfed4b4d-39fd-428a-84e2-4503537a3cbb">
+      <ID>Manufacturer Dimension 1</ID>
+      <Name>Manufacturer Dimension 1</Name>
+      <DimensionID>Manufacturer Dimension 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ec87b441-ea4e-4dd5-9e6b-4224344bfbbb">
+          <AttributeID>Manufacturer Short Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4ee5fb7b-5ccc-436a-9b75-0b67ff2f8da2">
+      <ID>Customer Dimension 1</ID>
+      <Name>Customer Dimension 1</Name>
+      <DimensionID>Customer Dimension 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="57be5828-6216-4bc4-8b1c-85caf3db0ad9">
+          <AttributeID>Customer Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="16026637-78e3-4130-863f-01c607ccba39">
+      <ID>Car Sold Fact Table</ID>
+      <Name>Car Sold Fact Table</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a7b9d2f6-6faa-49a4-81c7-12f955923ba9">
+          <ID>Car Sold Id</ID>
+          <Name>Car Sold Id</Name>
+          <Source dwd:design-time-name="47cf57db-4f4a-4f9d-bc4a-f7f67db0b93a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d813297a-4fa7-4978-9dbb-8f6e33d33733">
+              <TableID>dbo_CarSoldFactTable</TableID>
+              <ColumnID>car_sold_id</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fce2e322-e95d-4b17-af6c-1ece047befd7">
+          <ID>Agreed Price</ID>
+          <Name>Agreed Price</Name>
+          <Source dwd:design-time-name="44cd8233-aa6d-4d2b-be0e-5dd52b6f08ac">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6d73eddb-e9bb-492c-a9c2-c98e4f0ce759">
+              <TableID>dbo_CarSoldFactTable</TableID>
+              <ColumnID>agreed_price</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0c727400-9598-4559-9a11-bab77f3a75f0">
+          <ID>Car Sold Fact Table Count</ID>
+          <Name>Car Sold Fact Table Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5742a462-c957-453f-8fe0-1678b30d1b33">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="5fea2205-b5eb-4ddd-a381-e6366730c6af">
+              <TableID>dbo_CarSoldFactTable</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="cab82a04-cba2-45c1-8a93-f335cef564b5">
+          <CubeDimensionID>Car Sold Fact Table</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8cebc9f0-5aad-4dad-831a-306bae31d38b">
+              <AttributeID>s Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="138c30cf-4656-4f69-80d6-71e8873c2bbf">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9adc2981-9489-4ee7-9638-8b2626c6fbc8">
+                    <TableID>dbo_CarSoldFactTable</TableID>
+                    <ColumnID>s_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="415aa058-fce1-4deb-a1cb-0ca57f2f7ff5">
+          <CubeDimensionID>Car Features Dimension 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4dad9e69-c61b-4cc8-8139-113ea26e248b">
+              <AttributeID>Car Feature Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cacffb3e-f79b-4845-b789-5611c3876c5b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2a6eefb0-8e53-4842-9e30-c6f4b77ca12e">
+                    <TableID>dbo_CarSoldFactTable</TableID>
+                    <ColumnID>car_feature_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="594d9655-627e-4912-ae2b-49959e38c767">
+          <CubeDimensionID>Location Dimension 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="15c413d0-0d92-457e-af76-4fd88fc7b366">
+              <AttributeID>Location Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="00b81739-5329-40fa-9db3-42b94ddd2209">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bf2ce09e-fee7-45b5-857d-fe27e3e68b82">
+                    <TableID>dbo_CarSoldFactTable</TableID>
+                    <ColumnID>location_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e4a6e2a9-f913-436b-836d-d1b1010449df">
+          <CubeDimensionID>Car Model Dimension 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0be72757-7086-4d79-8734-5b0ba9fd9937">
+              <AttributeID>Model Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a7d52d97-f023-4950-97d9-8074c9a3ba27">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f2dba553-9ab3-4c3d-a8aa-64b446bc1324">
+                    <TableID>dbo_CarSoldFactTable</TableID>
+                    <ColumnID>model_code</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="44c53b23-b736-4401-ac28-77628a2494c0">
+          <CubeDimensionID>Day Time Dimension 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3fe16479-8515-4d9d-98c7-727462b54c19">
+              <AttributeID>Day Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="79cdaecd-e946-4dc7-866b-751601629e14">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="de21cc18-3a42-4690-8be7-9a35e58ebb95">
+                    <TableID>dbo_CarSoldFactTable</TableID>
+                    <ColumnID>day_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3c00359f-64da-4cbf-92de-41a358292262">
+          <CubeDimensionID>Vehicle Category Dimension 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="004a5dd4-6939-48d2-a81d-d98d406e4de8">
+              <AttributeID>Vehicle Category Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b71bff3b-9a6c-4122-99b2-b6f990475025">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="65705c7c-0359-4cc0-826c-ba3df1b8422a">
+                    <TableID>dbo_CarSoldFactTable</TableID>
+                    <ColumnID>vehicle_category_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f5b22adf-cadc-477d-814f-09015f485332">
+          <CubeDimensionID>Manufacturer Dimension 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="004d404b-ad12-4124-8200-5ac226a9d869">
+              <AttributeID>Manufacturer Short Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="24275fab-49aa-4913-8993-4125752bba19">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="48bafdc3-b5e5-4629-9b88-1b7321fae027">
+                    <TableID>dbo_CarSoldFactTable</TableID>
+                    <ColumnID>manufacturer_short_name</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cbb878e2-6920-4f37-992b-16f4f0c78f6b">
+          <CubeDimensionID>Customer Dimension 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b60c312c-b772-4142-9ac6-4920334eb615">
+              <AttributeID>Customer Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="96096334-53a9-4c15-b439-274d451fbd5b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e33a6ea8-f933-46d4-b52e-961e7b45e83b">
+                    <TableID>dbo_CarSoldFactTable</TableID>
+                    <ColumnID>customer_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="93142922-3232-4116-a5b9-9b4659daa393">
+    <DataSourceViewID>Car Sales Mart - Cars Sold</DataSourceViewID>
+  </Source>
+</Cube>

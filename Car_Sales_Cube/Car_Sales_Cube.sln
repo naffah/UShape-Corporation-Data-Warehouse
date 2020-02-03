@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Car_Sales_Cube", "Car_Sales_Cube\Car_Sales_Cube.dwproj", "{FAB2422D-BFAE-4FE3-B963-7F13EA49EDFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAB2422D-BFAE-4FE3-B963-7F13EA49EDFF}.Development|Default.ActiveCfg = Development
+		{FAB2422D-BFAE-4FE3-B963-7F13EA49EDFF}.Development|Default.Build.0 = Development
+		{FAB2422D-BFAE-4FE3-B963-7F13EA49EDFF}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3134F27-387F-44E9-A1BE-30C38D587692}
+	EndGlobalSection
+EndGlobal

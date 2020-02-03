@@ -1,0 +1,124 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Car_Services_Cube</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>KjA2ln2EeFR+QWB762RTL3xln34=11/26/2019 3:07:42 PM11/26/2019 3:01:30 PM</TimeStamp>
+        <ID>
+          <String>Car Services Mart</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>AAgyVcCJ7JEYJhd6JBiv7rvPdDs=11/26/2019 3:03:28 PM11/26/2019 3:03:28 PM</TimeStamp>
+        <ID>
+          <String>Car Services Mart - Monthly</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>KeN3JNL5uuj567MgOPt+JOp2MDw=11/26/2019 3:03:47 PM11/26/2019 3:03:47 PM</TimeStamp>
+        <ID>
+          <String>Car Services Mart - Yearly</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cnTDzuY+ZSijP19fFZrOVCL7HRg=11/26/2019 3:03:59 PM11/26/2019 3:03:58 PM</TimeStamp>
+        <ID>
+          <String>Contacts</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZgyUYB1votidYP06C6pA8e+bXLE=11/26/2019 3:03:59 PM11/26/2019 3:03:59 PM</TimeStamp>
+        <ID>
+          <String>Service Bookings</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>izeGTmrGvnMeiNFgZTwHJ5ezeNM=11/26/2019 3:03:59 PM11/26/2019 3:03:59 PM</TimeStamp>
+        <ID>
+          <String>Month</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ggxsVLlPEFlRzfiQ0fnZFtNGErM=11/26/2019 3:03:59 PM11/26/2019 3:03:59 PM</TimeStamp>
+        <ID>
+          <String>Service Fact Table Monthly</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3lf3muvxvz42WkJ+ajMLljPtSnY=11/26/2019 3:04:15 PM11/26/2019 3:04:15 PM</TimeStamp>
+        <ID>
+          <String>Contacts 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lu5P7bAy+wcoYV3fGbBaiXaOoo8=11/26/2019 3:04:15 PM11/26/2019 3:04:15 PM</TimeStamp>
+        <ID>
+          <String>Year</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0dA3+dW22W75Lr95EBvXcYA8IvE=11/26/2019 3:04:15 PM11/26/2019 3:04:15 PM</TimeStamp>
+        <ID>
+          <String>Service Bookings 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MTDCu3PbbEFqqmNJ98hpzk3hsZE=11/26/2019 3:04:15 PM11/26/2019 3:04:15 PM</TimeStamp>
+        <ID>
+          <String>Service Fact Table Yearly</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>yiwYoTjNYInGQF6VCcW5Wyxa9uw=11/26/2019 3:03:59 PM11/26/2019 3:03:58 PMHfyAYTspzNFzbrMthl9AdC7bad0=11/26/2019 3:03:59 PM11/26/2019 3:03:58 PM</TimeStamp>
+        <ID>
+          <String>Car Services Mart - Monthly</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Qn9Jw+Or5wp2m3uZW8ZgpxvLuaY=11/26/2019 3:04:15 PM11/26/2019 3:04:14 PMCZ8o30PLpo3JA/DJvsA/SLsAuPo=11/26/2019 3:04:15 PM11/26/2019 3:04:15 PM</TimeStamp>
+        <ID>
+          <String>Car Services Mart - Yearly</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>Kvibfl/sL3oB2mmKN6myghboM7Q=11/26/2019 2:48:23 PM11/26/2019 2:48:23 PM</TimeStamp>
+      <ID>
+        <String>Car_Services_Cube</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2019-11-26T10:07:54.153333Z</LastDeployed>
+</DeploymentSnapshot>
